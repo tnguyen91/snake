@@ -10,6 +10,9 @@ Game::Game()
     selectedOption(MenuOption::Start),
     gameState(GameState::MainMenu) {
 
+    icon.loadFromFile("./icon.png");
+    window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
+
     if (!font.loadFromFile("./font.ttf")) {
         window.close();
     }
