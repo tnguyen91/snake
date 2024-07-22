@@ -46,6 +46,7 @@ private:
     int score;
     MenuOption selectedOption;
     GameState gameState;
+    sf::Image icon;
     sf::Font font;
     sf::Text startText;
     sf::Text restartText;
